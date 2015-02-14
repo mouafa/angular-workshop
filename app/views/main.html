@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2" ng-init="show=false">
+
+      <input type="text" class="form-control" placeholder="Enter your name please" ng-model="name" ng-blur="show='!show'" ng-focus="show=false" ng-model-options="{ updateOn: 'blur' }">
+
+      <h3 ng-show="show">Hi {{name}} </h3>
+      
+      <a href="#/lists" class="btn btn-primary btn-lg btn-block" ng-class="{hide: !name==true}"">Continue</a>
+
+    </div>
+</div>
